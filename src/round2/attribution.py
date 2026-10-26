@@ -351,9 +351,11 @@ def table(df: pd.DataFrame, man: pd.DataFrame) -> pd.DataFrame:
     return pd.DataFrame(out)
 
 
-def fourarm(df: pd.DataFrame, seed=SEED) -> pd.DataFrame:
+def fourarm(df: pd.DataFrame, man: pd.DataFrame | None = None, seed=SEED) -> pd.DataFrame:
     """(e_prior,advice − e_prior,control) − (e_none,advice − e_none,control) on (item, order) with all four cells
-    eligible and parsed; item-averaged; item bootstrap. Also the raw paired prior − none and prior − own-full."""
+    eligible and parsed; item-averaged; item bootstrap. Also the raw paired prior − none. With the manifest, the
+    missing-outcome bounds of the four-arm contrast over the scheduled eligible pairs of all four cells (a_bounds with
+    coefficients +1, −1, −1, +1), as for the package differences."""
     d = df[df.eligible & df.parsed]
     piv = d.pivot_table(index=["stratum", "c0", "item_id", "order"], columns="cell", values="e")
     out = []
@@ -367,9 +369,13 @@ def fourarm(df: pd.DataFrame, seed=SEED) -> pd.DataFrame:
                 v = (j[need[0]] - j[need[1]]) - (j[need[2]] - j[need[3]])
                 m, lo, hi, n = _boot(v.groupby(level=2).mean().values, seed)
                 raw = _boot((j[need[0]] - j[need[2]]).groupby(level=2).mean().values, seed)
-                out.append(dict(stratum=s, baseline="correct" if c0 else "wrong", prior=prior, advice=arm,
-                                fourarm_diff=m, lo=lo, hi=hi, items=n, pairs=len(j),
-                                raw_prior_minus_none=raw[0], raw_lo=raw[1], raw_hi=raw[2]))
+                row = dict(stratum=s, baseline="correct" if c0 else "wrong", prior=prior, advice=arm,
+                           fourarm_diff=m, lo=lo, hi=hi, items=n, pairs=len(j),
+                           raw_prior_minus_none=raw[0], raw_lo=raw[1], raw_hi=raw[2])
+                if man is not None:
+                    bmin, bmax, bi, bp = a_bounds(df, dict(zip(need, (1, -1, -1, 1))), s, bool(c0), man)
+                    row.update(bound_min=bmin, bound_max=bmax, bound_items=bi, bound_pairs=bp)
+                out.append(row)
     return pd.DataFrame(out)
 
 
@@ -403,7 +409,7 @@ def analyze(args):
         man = man_all[~man_all.item_id.isin(excl)]
         t = table(df, man)
         t.to_csv(RES2 / f"attribution_qwen3.5-27b{suf}.csv", index=False)
-        fourarm(df).to_csv(RES2 / f"attribution_fouram{suf}.csv", index=False)
+        fourarm(df, man).to_csv(RES2 / f"attribution_fouram{suf}.csv", index=False)
         rows = []
         for s in ("known", "boundary"):
             for arm in ("bare_wrong", "rationale_wrong"):

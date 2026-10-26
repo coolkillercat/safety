@@ -93,7 +93,7 @@ FAMILIES = {   # filename prefix -> base schema
                              support="cell rows"),
     "attribution_fouram": dict(population="replay run rows with a parsed baseline answer",
                                unit="four-arm floor-adjusted contrast vs none; raw prior − none beside",
-                               weights=ITEMW, missing="complete cases",
+                               weights=ITEMW, missing="fourarm_diff/lo/hi and raw_* complete cases; " + BOUNDS,
                                support="(item, order) with all four cells eligible and parsed"),
     "attribution_contrasts": dict(population="replay run, baseline-correct rows", unit="F(A) − F(B) per advice × stratum",
                                   weights=ITEMW, missing="diff/lo/hi complete cases; " + BOUNDS,

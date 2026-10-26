@@ -2,11 +2,11 @@
  "population": "replay run rows with a parsed baseline answer; items whose valid rationale is judged sound",
  "unit": "four-arm floor-adjusted contrast vs none; raw prior − none beside",
  "weights": "item-weighted: mean over an item's parsed orders, then mean over items; 95% item bootstrap (10,000, seed 20261023 reset per estimate)",
- "missing": "complete cases",
+ "missing": "fourarm_diff/lo/hi and raw_* complete cases; bound_min/bound_max = deterministic missing-outcome bounds over the SCHEDULED eligible manifest (absent jobs stay in the denominator; positive-coefficient cells' missing outcomes filled correct/wrong, negative-coefficient the reverse) — an identification range for this finite sample, not an interval; bound_items/bound_pairs = its support",
  "support": "(item, order) with all four cells eligible and parsed",
  "parser": "strict last 'Answer: X' line — sensitivity",
  "family": "attribution_fouram",
- "one_line": "Schema: replay run rows with a parsed baseline answer; items whose valid rationale is judged sound | unit: four-arm floor-adjusted contrast vs none; raw prior − none beside | weights: item-weighted: mean over an item's parsed orders, then mean over items | missing: complete cases | support: (item, order) with all four cells eligible and parsed",
+ "one_line": "Schema: replay run rows with a parsed baseline answer; items whose valid rationale is judged sound | unit: four-arm floor-adjusted contrast vs none; raw prior − none beside | weights: item-weighted: mean over an item's parsed orders, then mean over items | missing: fourarm_diff/lo/hi and raw_* complete cases | support: (item, order) with all four cells eligible and parsed",
  "columns": [
   "stratum",
   "baseline",
@@ -19,6 +19,10 @@
   "pairs",
   "raw_prior_minus_none",
   "raw_lo",
-  "raw_hi"
+  "raw_hi",
+  "bound_min",
+  "bound_max",
+  "bound_items",
+  "bound_pairs"
  ]
 }
