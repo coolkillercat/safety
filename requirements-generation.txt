@@ -1,0 +1,6 @@
+# Only needed to regenerate model outputs (GPU) or advice texts (API); the analysis needs requirements.txt only.
+vllm==0.32.0
+transformers==5.19.0
+torch==2.13.0
+anthropic
+datasets

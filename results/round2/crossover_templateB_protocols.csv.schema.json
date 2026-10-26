@@ -1,0 +1,28 @@
+{
+ "population": "anchor known items, order 0 (300 scheduled); all items (no audit exclusion)",
+ "unit": "template-B bare-note main effect × protocol (as run 768 / selectively regenerated / fixed 2,048) and template A",
+ "weights": "item-weighted: mean over an item's parsed orders, then mean over items; 95% item bootstrap (10,000, seed 20261023 reset per estimate)",
+ "missing": "diff = complete cases; bound_min/bound_max = deterministic missing-outcome bounds over the SCHEDULED eligible manifest (absent jobs stay in the denominator; positive-coefficient cells' missing outcomes filled correct/wrong, negative-coefficient the reverse) — an identification range for this finite sample, not an interval; bound_items/bound_pairs = its support (all 300 scheduled items); B_minus_A on items complete in all 8 A and 8 B cells",
+ "support": "see missing",
+ "parser": "strict last 'Answer: X' line — sensitivity",
+ "family": "crossover_templateB",
+ "one_line": "Schema: anchor known items, order 0 (300 scheduled); all items (no audit exclusion) | unit: template-B bare-note main effect × protocol (as run 768 / selectively regenerated / fixed 2,048) and template A | weights: item-weighted: mean over an item's parsed orders, then mean over items | missing: diff = complete cases | support: see missing",
+ "columns": [
+  "protocol",
+  "template",
+  "contrast",
+  "diff",
+  "lo",
+  "hi",
+  "items",
+  "bound_min",
+  "bound_max",
+  "items_scheduled",
+  "B_minus_A",
+  "BA_lo",
+  "BA_hi",
+  "BA_items",
+  "A_on_same_items",
+  "B_on_same_items"
+ ]
+}

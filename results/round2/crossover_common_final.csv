@@ -1,0 +1,37 @@
+support,contrast,tier,diff,lo,hi,items,pairs
+"all 16 cells parsed on the (item, order)",role (system − user),none,-10.827566320645905,-12.759515570934257,-8.895617070357554,289,830
+"all 16 cells parsed on the (item, order)",role (system − user),decept,20.93425605536332,17.92099192618224,24.01960784313725,289,830
+"all 16 cells parsed on the (item, order)",role (system − user),decept − none,31.76182237600923,28.258001730103803,35.32295271049596,289,830
+"all 16 cells parsed on the (item, order)",speaker (organiser − peer),none,11.577277970011531,10.149942329873124,12.99019607843137,289,830
+"all 16 cells parsed on the (item, order)",speaker (organiser − peer),decept,27.479815455593997,25.158592848904267,29.77220299884659,289,830
+"all 16 cells parsed on the (item, order)",speaker (organiser − peer),decept − none,15.902537485582469,13.033448673587081,18.728373702422147,289,830
+"all 16 cells parsed on the (item, order)",certainty (assertive − hedged),none,16.19088811995387,14.071150519031136,18.396770472895042,289,830
+"all 16 cells parsed on the (item, order)",certainty (assertive − hedged),decept,27.277970011534023,24.754901960784313,29.786620530565166,289,830
+"all 16 cells parsed on the (item, order)",certainty (assertive − hedged),decept − none,11.08708189158016,7.497116493656285,14.662629757785467,289,830
+"all 16 cells parsed on the (item, order)",role × speaker,none,-13.69665513264129,-16.176470588235293,-11.216839677047291,289,830
+"all 16 cells parsed on the (item, order)",role × speaker,decept,-10.149942329873127,-13.841551326412919,-6.487168396770482,289,830
+"all 16 cells parsed on the (item, order)",role × speaker,decept − none,3.5467128027681665,-0.3748558246828143,7.324106113033448,289,830
+"all 16 cells parsed on the (item, order)",role × certainty,none,-15.426758938869668,-18.598615916955016,-12.341407151095732,289,830
+"all 16 cells parsed on the (item, order)",role × certainty,decept,-1.4417531718569778,-4.815455594002307,1.9319492502883506,289,830
+"all 16 cells parsed on the (item, order)",role × certainty,decept − none,13.985005767012689,9.77508650519031,18.194925028835062,289,830
+"all 16 cells parsed on the (item, order)",speaker × certainty,none,15.426758938869664,12.42791234140715,18.425605536332178,289,830
+"all 16 cells parsed on the (item, order)",speaker × certainty,decept,28.489042675893884,24.077277970011533,32.90080738177624,289,830
+"all 16 cells parsed on the (item, order)",speaker × certainty,decept − none,13.062283737024222,7.987312572087658,18.166089965397923,289,830
+… and all 3 orders complete per item,role (system − user),none,-10.971685971685972,-12.934362934362934,-9.00900900900901,259,777
+… and all 3 orders complete per item,role (system − user),decept,21.525096525096522,18.307593307593308,24.67824967824968,259,777
+… and all 3 orders complete per item,role (system − user),decept − none,32.496782496782494,28.7966537966538,36.13256113256112,259,777
+… and all 3 orders complete per item,speaker (organiser − peer),none,11.615186615186616,10.135135135135135,13.127413127413126,259,777
+… and all 3 orders complete per item,speaker (organiser − peer),decept,28.346203346203342,25.83655083655084,30.72715572715573,259,777
+… and all 3 orders complete per item,speaker (organiser − peer),decept − none,16.73101673101673,13.674388674388677,19.72329472329472,259,777
+… and all 3 orders complete per item,certainty (assertive − hedged),none,15.604890604890606,13.544884169884169,17.824967824967825,259,777
+… and all 3 orders complete per item,certainty (assertive − hedged),decept,28.796653796653793,26.158301158301157,31.402831402831406,259,777
+… and all 3 orders complete per item,certainty (assertive − hedged),decept − none,13.191763191763192,9.45945945945946,16.82754182754183,259,777
+… and all 3 orders complete per item,role × speaker,none,-13.835263835263834,-16.409266409266408,-11.196911196911197,259,777
+… and all 3 orders complete per item,role × speaker,decept,-10.746460746460745,-14.543114543114545,-6.885456885456886,259,777
+… and all 3 orders complete per item,role × speaker,decept − none,3.0888030888030884,-0.9009009009009012,7.078507078507077,259,777
+… and all 3 orders complete per item,role × certainty,none,-16.151866151866155,-19.111969111969113,-13.127413127413126,259,777
+… and all 3 orders complete per item,role × certainty,decept,-1.6087516087516087,-5.212355212355212,1.8661518661518666,259,777
+… and all 3 orders complete per item,role × certainty,decept − none,14.543114543114541,10.489060489060488,18.66151866151866,259,777
+… and all 3 orders complete per item,speaker × certainty,none,15.379665379665378,12.355212355212355,18.404118404118403,259,777
+… and all 3 orders complete per item,speaker × certainty,decept,29.279279279279287,24.646074646074652,33.91248391248391,259,777
+… and all 3 orders complete per item,speaker × certainty,decept − none,13.8996138996139,8.622908622908621,19.111969111969113,259,777

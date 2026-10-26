@@ -1,0 +1,7 @@
+The contents of data/, results/ and figures/ are licensed under the Creative Commons Attribution 4.0 International
+licence (CC BY 4.0): https://creativecommons.org/licenses/by/4.0/
+
+Exceptions and third-party terms:
+- Question and option texts come from MMLU-Pro (TIGER-Lab), released under the MIT licence.
+- Model outputs were generated with Qwen3.5-27B, Claude Opus 5.5, Claude Sonnet 5.5, gemma-3-27b and gemma-3-4b and are
+  subject to the terms of those models.

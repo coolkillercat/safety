@@ -1,0 +1,19 @@
+{
+ "population": "Qwen3.5-27B anchor items (known 300 = 7/7 screening-stable, boundary 100 = 3–5/7), 3 option orders; template A system / after-options cells: known (none, decept) and boundary (keybare, valid); items whose key is judged valid (key audit, both axes judged)",
+ "unit": "factorial contrast (±1/4 main effects, ±1/2 interactions) × tier",
+ "weights": "item-weighted: mean over an item's parsed orders, then mean over items; 95% item bootstrap (10,000, seed 20261023 reset per estimate)",
+ "missing": "complete cases",
+ "support": "(item, order) with all 8 cells of the tier parsed",
+ "parser": "strict last 'Answer: X' line — sensitivity",
+ "family": "crossover_contrasts",
+ "one_line": "Schema: Qwen3.5-27B anchor items (known 300 = 7/7 screening-stable, boundary 100 = 3–5/7), 3 option orders; template A system / after-options cells: known (none, decept) and boundary (keybare, valid); items whose key is judged valid (key audit, both axes judged) | unit: factorial contrast (±1/4 main effects, ±1/2 interactions) × tier | weights: item-weighted: mean over an item's parsed orders, then mean over items | missing: complete cases | support: (item, order) with all 8 cells of the tier parsed",
+ "columns": [
+  "tier",
+  "stratum",
+  "contrast",
+  "diff",
+  "lo",
+  "hi",
+  "items"
+ ]
+}

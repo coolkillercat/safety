@@ -1,0 +1,19 @@
+{
+ "population": "branched follow-up rows; all items (no audit exclusion)",
+ "unit": "advice × stratum × missing category",
+ "weights": "counts",
+ "missing": "this table IS the missing outcomes",
+ "support": "eligible rows",
+ "parser": "strict last 'Answer: X' line — sensitivity",
+ "family": "fu_missing",
+ "one_line": "Schema: branched follow-up rows; all items (no audit exclusion) | unit: advice × stratum × missing category | weights: counts | missing: this table IS the missing outcomes | support: eligible rows",
+ "columns": [
+  "advice",
+  "stratum",
+  "unresolved",
+  "length_cap",
+  "inline_answer",
+  "explicit_rejection",
+  "other"
+ ]
+}

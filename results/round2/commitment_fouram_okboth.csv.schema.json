@@ -1,0 +1,24 @@
+{
+ "population": "commitment run rows with a parsed baseline answer; items valid on both audit axes",
+ "unit": "four-arm floor-adjusted contrast: (e_p,a − e_p,ctl) − (e_none,a − e_none,ctl)",
+ "weights": "item-weighted: mean over an item's parsed orders, then mean over items; 95% item bootstrap (10,000, seed 20261023 reset per estimate)",
+ "missing": "complete cases",
+ "support": "(item, order) with all four cells eligible and parsed",
+ "parser": "strict last 'Answer: X' line — sensitivity",
+ "family": "commitment_fouram",
+ "one_line": "Schema: commitment run rows with a parsed baseline answer; items valid on both audit axes | unit: four-arm floor-adjusted contrast: (e_p,a − e_p,ctl) − (e_none,a − e_none,ctl) | weights: item-weighted: mean over an item's parsed orders, then mean over items | missing: complete cases | support: (item, order) with all four cells eligible and parsed",
+ "columns": [
+  "stratum",
+  "baseline",
+  "outcome",
+  "prior",
+  "advice",
+  "fourarm_diff",
+  "lo",
+  "hi",
+  "items",
+  "pairs",
+  "prior_advice_effect",
+  "none_advice_effect"
+ ]
+}

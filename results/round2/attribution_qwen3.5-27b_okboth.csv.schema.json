@@ -1,0 +1,33 @@
+{
+ "population": "replay run: anchor items × 3 orders with a parsed baseline answer; items valid on both audit axes",
+ "unit": "stratum × baseline correctness × prior × advice: error (F on correct, 1 − U on wrong)",
+ "weights": "err_item item-weighted (item-weighted: mean over an item's parsed orders, then mean over items; 95% item bootstrap (10,000, seed 20261023 reset per estimate)); err_trial pooled",
+ "missing": "complete cases; missing_* by category; denominators scheduled (stratum items × 3) → n_baseline_parsed (stratum) → n_group (initially correct | wrong: parallel groups summing to n_baseline_parsed) → n_rows_present → n_eligible → n_final_parsed",
+ "support": "cell rows",
+ "parser": "strict last 'Answer: X' line — sensitivity",
+ "family": "attribution_qwen",
+ "one_line": "Schema: replay run: anchor items × 3 orders with a parsed baseline answer; items valid on both audit axes | unit: stratum × baseline correctness × prior × advice: error (F on correct, 1 − U on wrong) | weights: err_item item-weighted (item-weighted: mean over an item's parsed orders, then mean over items | missing: complete cases | support: cell rows",
+ "columns": [
+  "stratum",
+  "baseline",
+  "prior",
+  "advice",
+  "scheduled",
+  "n_baseline_parsed",
+  "n_group",
+  "n_rows_present",
+  "n_eligible",
+  "n_final_parsed",
+  "err_item",
+  "err_lo",
+  "err_hi",
+  "items",
+  "err_trial",
+  "missing_unresolved",
+  "missing_length_cap",
+  "missing_inline_answer",
+  "missing_explicit_rejection",
+  "missing_other",
+  "P_a1_eq_Y_item"
+ ]
+}

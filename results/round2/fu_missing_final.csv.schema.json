@@ -1,0 +1,19 @@
+{
+ "population": "branched follow-up rows; terminal-answer rule (parsed_final): an answer line followed by more text is unresolved — primary outcome",
+ "unit": "advice × stratum × missing category",
+ "weights": "counts",
+ "missing": "this table IS the missing outcomes",
+ "support": "eligible rows",
+ "parser": "terminal-answer (parsed_final) — primary",
+ "family": "fu_missing",
+ "one_line": "Schema: branched follow-up rows; terminal-answer rule (parsed_final): an answer line followed by more text is unresolved — primary outcome | unit: advice × stratum × missing category | weights: counts | missing: this table IS the missing outcomes | support: eligible rows",
+ "columns": [
+  "advice",
+  "stratum",
+  "unresolved",
+  "length_cap",
+  "inline_answer",
+  "explicit_rejection",
+  "other"
+ ]
+}

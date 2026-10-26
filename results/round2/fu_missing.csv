@@ -1,0 +1,9 @@
+advice,stratum,unresolved,length_cap,inline_answer,explicit_rejection,other
+bare_correct,boundary,0,2,0,0,0
+bare_wrong,boundary,0,6,0,0,0
+bare_wrong,known,0,2,0,0,0
+rationale_correct,boundary,0,2,0,0,0
+rationale_wrong,boundary,0,2,0,0,0
+rationale_wrong,known,0,5,0,0,0
+reconsider,boundary,0,17,0,0,0
+reconsider,known,0,6,0,0,0

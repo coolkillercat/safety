@@ -1,0 +1,21 @@
+stratum,advice,contrast,diff,lo,hi,items,pairs,support,bound_min,bound_max,bound_items,bound_pairs
+known,bare_wrong,advice effect own-conclusion − own-full,0.5617977528089887,-0.2496878901373284,1.435705368289638,267,774,joint: all four cells eligible and parsed,-1.2484394506866416,1.1860174781523094,267,791
+known,bare_wrong,advice effect own-full − quoted-full,0.1893939393939394,0.0,0.5681818181818182,264,770,joint: all four cells eligible and parsed,-1.9350811485642945,1.685393258426966,267,791
+known,bare_wrong,advice effect quoted-conclusion − quoted-full,0.457516339869281,-0.13071895424836602,1.30718954248366,255,742,joint: all four cells eligible and parsed,-5.68039950062422,7.116104868913857,267,791
+known,bare_wrong,advice effect filler − none,0.1886792452830186,-2.8301886792452833,3.081761006289308,265,773,joint: all four cells eligible and parsed,-1.6853932584269662,1.2484394506866416,267,791
+known,bare_wrong,advice effect own-wrong-full − none,8.143939393939394,5.113636363636363,11.237373737373737,264,768,joint: all four cells eligible and parsed,5.305867665418226,9.05118601747815,267,791
+known,rationale_wrong,advice effect own-conclusion − own-full,2.944862155388471,0.37593984962406024,5.639097744360902,266,773,joint: all four cells eligible and parsed,0.7490636704119854,3.245942571785268,267,791
+known,rationale_wrong,advice effect own-full − quoted-full,0.12722646310432575,-2.162849872773537,2.480916030534351,262,761,joint: all four cells eligible and parsed,-3.5580524344569286,2.0599250936329585,267,791
+known,rationale_wrong,advice effect quoted-conclusion − quoted-full,7.3999999999999995,4.533333333333333,10.533333333333333,250,721,joint: all four cells eligible and parsed,-0.936329588014982,14.981273408239701,267,791
+known,rationale_wrong,advice effect filler − none,1.3836477987421385,-1.383647798742138,4.213836477987421,265,777,joint: all four cells eligible and parsed,0.686641697877653,2.6217228464419478,267,791
+known,rationale_wrong,advice effect own-wrong-full − none,6.100628930817609,2.3270440251572326,10.0,265,773,joint: all four cells eligible and parsed,4.619225967540574,7.053682896379526,267,791
+boundary,bare_wrong,advice effect own-conclusion − own-full,3.1963470319634704,-1.82648401826484,8.904109589041095,73,183,joint: all four cells eligible and parsed,-0.8888888888888888,5.111111111111112,75,190
+boundary,bare_wrong,advice effect own-full − quoted-full,0.7246376811594203,-2.4154589371980673,4.5893719806763285,69,175,joint: all four cells eligible and parsed,-12.0,8.0,75,190
+boundary,bare_wrong,advice effect quoted-conclusion − quoted-full,6.321839080459771,1.1494252873563218,12.643678160919542,58,148,joint: all four cells eligible and parsed,-29.777777777777775,30.666666666666664,75,190
+boundary,bare_wrong,advice effect filler − none,-0.6944444444444438,-9.49074074074074,7.638888888888889,72,177,joint: all four cells eligible and parsed,-9.333333333333334,1.9999999999999998,75,190
+boundary,bare_wrong,advice effect own-wrong-full − none,2.415458937198067,-7.004830917874395,11.594202898550723,69,172,joint: all four cells eligible and parsed,-4.4444444444444455,9.333333333333334,75,190
+boundary,rationale_wrong,advice effect own-conclusion − own-full,7.077625570776255,0.22831050228310515,14.15525114155251,73,182,joint: all four cells eligible and parsed,4.222222222222221,9.777777777777777,75,190
+boundary,rationale_wrong,advice effect own-full − quoted-full,3.9215686274509802,-2.4509803921568625,11.02941176470588,68,174,joint: all four cells eligible and parsed,-1.7777777777777777,11.555555555555555,75,190
+boundary,rationale_wrong,advice effect quoted-conclusion − quoted-full,21.83908045977011,12.93103448275862,31.60919540229885,58,144,joint: all four cells eligible and parsed,-13.333333333333336,39.77777777777778,75,190
+boundary,rationale_wrong,advice effect filler − none,5.47945205479452,-2.5114155251141543,13.926940639269406,73,179,joint: all four cells eligible and parsed,-1.7777777777777761,8.222222222222223,75,190
+boundary,rationale_wrong,advice effect own-wrong-full − none,5.707762557077626,-5.022831050228311,17.123287671232877,73,178,joint: all four cells eligible and parsed,-0.4444444444444452,7.333333333333333,75,190

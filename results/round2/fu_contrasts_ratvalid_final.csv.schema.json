@@ -1,0 +1,26 @@
+{
+ "population": "anchor items with parsed a0 (branched follow-up); items whose valid rationale is judged sound; terminal-answer rule (parsed_final): an answer line followed by more text is unresolved — primary outcome",
+ "unit": "arm − arm on F or U; within-arm net accuracy",
+ "weights": "item-weighted: mean over an item's parsed orders, then mean over items; 95% item bootstrap (10,000, seed 20261023 reset per estimate); net accuracy also trial-weighted",
+ "missing": "complete cases",
+ "support": "(item, order) parsed in both arms; net accuracy on pairs complete in all five arms",
+ "parser": "terminal-answer (parsed_final) — primary",
+ "family": "fu_contrasts",
+ "one_line": "Schema: anchor items with parsed a0 (branched follow-up); items whose valid rationale is judged sound; terminal-answer rule (parsed_final): an answer line followed by more text is unresolved — primary outcome | unit: arm − arm on F or U; within-arm net accuracy | weights: item-weighted: mean over an item's parsed orders, then mean over items | missing: complete cases | support: (item, order) parsed in both arms; net accuracy on pairs complete in all five arms",
+ "columns": [
+  "stratum",
+  "side",
+  "A",
+  "B",
+  "diff",
+  "lo",
+  "hi",
+  "items",
+  "pairs",
+  "rate_A",
+  "rate_B",
+  "upper97_5_A_if_zero",
+  "upper97_5_B_if_zero",
+  "trialweighted_diff"
+ ]
+}

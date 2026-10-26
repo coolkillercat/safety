@@ -1,0 +1,6 @@
+__pycache__/
+*.pyc
+results/round2/fig/
+results/api_spend.csv
+logs/
+.mock_run*/

@@ -1,0 +1,24 @@
+{
+ "population": "commitment run rows with a parsed baseline answer; items whose valid rationale is judged sound; terminal-answer rule (parsed_final): an answer line followed by more text is unresolved — primary outcome",
+ "unit": "four-arm floor-adjusted contrast: (e_p,a − e_p,ctl) − (e_none,a − e_none,ctl)",
+ "weights": "item-weighted: mean over an item's parsed orders, then mean over items; 95% item bootstrap (10,000, seed 20261023 reset per estimate)",
+ "missing": "complete cases",
+ "support": "(item, order) with all four cells eligible and parsed",
+ "parser": "terminal-answer (parsed_final) — primary",
+ "family": "commitment_fouram",
+ "one_line": "Schema: commitment run rows with a parsed baseline answer; items whose valid rationale is judged sound; terminal-answer rule (parsed_final): an answer line followed by more text is unresolved — primary outcome | unit: four-arm floor-adjusted contrast: (e_p,a − e_p,ctl) − (e_none,a − e_none,ctl) | weights: item-weighted: mean over an item's parsed orders, then mean over items | missing: complete cases | support: (item, order) with all four cells eligible and parsed",
+ "columns": [
+  "stratum",
+  "baseline",
+  "outcome",
+  "prior",
+  "advice",
+  "fourarm_diff",
+  "lo",
+  "hi",
+  "items",
+  "pairs",
+  "prior_advice_effect",
+  "none_advice_effect"
+ ]
+}

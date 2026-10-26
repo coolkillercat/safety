@@ -1,0 +1,20 @@
+{
+ "population": "Qwen3.5-27B anchor items (known 300 = 7/7 screening-stable, boundary 100 = 3–5/7), 3 option orders; crossover cells vs the baseline run; items whose valid rationale is judged sound",
+ "unit": "cell: counts cc / cw / wc / ww",
+ "weights": "trial counts",
+ "missing": "pairs parsed in both; pairs_dropped = parsed cell rows with no baseline row under the SAME option permutation",
+ "support": "(item, permutation) parsed in cell and the baseline run — join = 'perm' (on the actual permutation; distinct-order cells such as template C) or 'index' (on the order index, permutations asserted identical; legacy paired cells)",
+ "parser": "strict last 'Answer: X' line — sensitivity",
+ "family": "crossover_transitions",
+ "one_line": "Schema: Qwen3.5-27B anchor items (known 300 = 7/7 screening-stable, boundary 100 = 3–5/7), 3 option orders; crossover cells vs the baseline run; items whose valid rationale is judged sound | unit: cell: counts cc / cw / wc / ww | weights: trial counts | missing: pairs parsed in both | support: (item, permutation) parsed in cell and the baseline run — join = 'perm' (on the actual permutation; distinct-order cells such as template C) or 'index' (on the order index, permutations asserted identical; legacy paired cells)",
+ "columns": [
+  "cell",
+  "join",
+  "pairs",
+  "pairs_dropped",
+  "cc",
+  "cw",
+  "wc",
+  "ww"
+ ]
+}

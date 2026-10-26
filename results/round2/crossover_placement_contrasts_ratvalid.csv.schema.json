@@ -1,0 +1,24 @@
+{
+ "population": "Qwen3.5-27B anchor items (known 300 = 7/7 screening-stable, boundary 100 = 3–5/7), 3 option orders; template A known cells (three placements) + template B order 0; items whose valid rationale is judged sound",
+ "unit": "placement / speaker / certainty contrasts by family × tier",
+ "weights": "item-weighted: mean over an item's parsed orders, then mean over items; 95% item bootstrap (10,000, seed 20261023 reset per estimate)",
+ "missing": "diff/lo/hi complete cases; bound_min/bound_max = deterministic missing-outcome bounds over the SCHEDULED eligible manifest (absent jobs stay in the denominator; positive-coefficient cells' missing outcomes filled correct/wrong, negative-coefficient the reverse) — an identification range for this finite sample, not an interval; bound_items/bound_pairs = its support",
+ "support": "per family: the 18-cell common support, the organiser/peer cells involved (the 'assertive only' family: organiser/peer assertive cells — the matched reference for template C), or the 8 template cells at order 0 (see `family`)",
+ "parser": "strict last 'Answer: X' line — sensitivity",
+ "family": "crossover_placement",
+ "one_line": "Schema: Qwen3.5-27B anchor items (known 300 = 7/7 screening-stable, boundary 100 = 3–5/7), 3 option orders; template A known cells (three placements) + template B order 0; items whose valid rationale is judged sound | unit: placement / speaker / certainty contrasts by family × tier | weights: item-weighted: mean over an item's parsed orders, then mean over items | missing: diff/lo/hi complete cases | support: per family: the 18-cell common support, the organiser/peer cells involved (the 'assertive only' family: organiser/peer assertive cells — the matched reference for template C), or the 8 template cells at order 0 (see `family`)",
+ "columns": [
+  "family",
+  "tier",
+  "contrast",
+  "diff",
+  "lo",
+  "hi",
+  "items",
+  "pairs",
+  "bound_min",
+  "bound_max",
+  "bound_items",
+  "bound_pairs"
+ ]
+}

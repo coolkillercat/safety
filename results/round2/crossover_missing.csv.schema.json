@@ -1,0 +1,19 @@
+{
+ "population": "Qwen3.5-27B anchor items (known 300 = 7/7 screening-stable, boundary 100 = 3–5/7), 3 option orders; all crossover cells; all items (no audit exclusion)",
+ "unit": "cell × stratum × missing category",
+ "weights": "counts of eligible unparsed outputs",
+ "missing": "this table IS the missing outcomes",
+ "support": "eligible rows",
+ "parser": "strict last 'Answer: X' line — sensitivity",
+ "family": "crossover_missing",
+ "one_line": "Schema: Qwen3.5-27B anchor items (known 300 = 7/7 screening-stable, boundary 100 = 3–5/7), 3 option orders; all crossover cells; all items (no audit exclusion) | unit: cell × stratum × missing category | weights: counts of eligible unparsed outputs | missing: this table IS the missing outcomes | support: eligible rows",
+ "columns": [
+  "cell",
+  "stratum",
+  "unresolved",
+  "length_cap",
+  "inline_answer",
+  "explicit_rejection",
+  "other"
+ ]
+}

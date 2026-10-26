@@ -1,0 +1,22 @@
+{
+ "population": "commitment run, baseline-correct rows; all items (no audit exclusion)",
+ "unit": "F(prior) − F(none) per advice × stratum",
+ "weights": "item-weighted: mean over an item's parsed orders, then mean over items; 95% item bootstrap (10,000, seed 20261023 reset per estimate) (diff); F_prior/F_none trial-weighted on the paired set",
+ "missing": "complete cases",
+ "support": "(item, order) parsed in both",
+ "parser": "strict last 'Answer: X' line — sensitivity",
+ "family": "commitment_prior",
+ "one_line": "Schema: commitment run, baseline-correct rows; all items (no audit exclusion) | unit: F(prior) − F(none) per advice × stratum | weights: item-weighted: mean over an item's parsed orders, then mean over items | missing: complete cases | support: (item, order) parsed in both",
+ "columns": [
+  "stratum",
+  "advice",
+  "contrast",
+  "diff",
+  "lo",
+  "hi",
+  "items",
+  "pairs",
+  "F_prior",
+  "F_none"
+ ]
+}
