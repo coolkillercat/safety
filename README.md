@@ -1,7 +1,8 @@
 # Talking a language model out of a correct answer: code and data
 
 Code, items, generated advice texts, stored model outputs and result tables for the paper
-**"Position and Prior Context Matter More Than Channel: Talking a Language Model Out of a Correct Answer"**.
+**"Position Matters More Than Channel: Talking a Language Model Out of a Correct Answer"** (Xinyi Ni, 2026).
+To cite it, see `CITATION.cff`.
 
 The subject model is Qwen3.5-27B on four-option MMLU-Pro items. Experiment 1 moves one advice paragraph between three
 positions in the prompt (end of the system message, top of the user message, after the options) and varies who signs
@@ -30,7 +31,7 @@ confirms that every scheduled output is present.
 | `src/round2/attribution.py` | Experiment 2 (prior packages); it reuses rows of `branched.py` and `commitment.py` |
 | `src/round2/branched.py`, `src/round2/commitment.py` | the two runs whose rows Experiment 2 reuses (own full answer; no prior turn), plus conditions not analysed in the paper |
 | `src/round2/screen.py`, `strata.py`, `order_dups.py` | item screening, known / boundary strata, the pushed option X, option orders |
-| `src/round2/key_audit.py`, `audit_sets.py` | answer-key audit and the key-valid analysis sets |
+| `src/round2/key_audit.py`, `audit_sets.py` | answer-key audit and the audit-passing item sets (`_keyvalid` in table names) |
 | `src/round2/respond2.py`, `frames.py` | the baseline run that records each trial's first answer |
 | `src/config.py`, `src/round2/config2.py`, `templates_B.py`, `templates_C.py`, `irrelevant.py` | prompt text (template A in `config.py`), the two independently written templates, the unrelated paragraph |
 | `src/make_evidence.py`, `src/round2/halluc_fix.py` | generation and checking of the advice texts |
@@ -94,7 +95,7 @@ Any of these accepts `--backend mock --dry-run` to print the prompts without a m
 | `lo`, `hi` | likely range: 95% bootstrap interval over items (10,000 draws, seed 20261023) |
 | `bound_min`, `bound_max` | worst-case bounds over unfinished outputs |
 | suffix `_final` / none | terminal-answer rule (primary) / strict parser (sensitivity) |
-| suffix `_keyvalid`, `_ratvalid`, `_okboth` | items whose key / true rationale / both pass the audit |
+| suffix `_keyvalid`, `_ratvalid`, `_okboth` | audit-passing items (the auditor accepts the key; the paper's robustness set) / items whose true rationale passes / both |
 
 ## Licences
 

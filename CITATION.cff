@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this code or data, please cite the paper below."
+title: "Position Matters More Than Channel: code and data"
+authors:
+  - family-names: Ni
+    given-names: Xinyi
+    affiliation: Brandeis University
+    email: xinyini@brandeis.edu
+repository-code: "https://github.com/coolkillercat/safety"
+license:
+  - MIT
+  - CC-BY-4.0
+date-released: 2026-10-26
+preferred-citation:
+  type: article
+  title: "Position Matters More Than Channel: Talking a Language Model Out of a Correct Answer"
+  authors:
+    - family-names: Ni
+      given-names: Xinyi
+      affiliation: Brandeis University
+  year: 2026
+  month: 10
