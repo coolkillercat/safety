@@ -1,8 +1,8 @@
 # Talking a language model out of a correct answer: code and data
 
 Code, items, generated advice texts, stored model outputs and result tables for the paper
-**"Position Matters More Than Channel: Talking a Language Model Out of a Correct Answer"** (Xinyi Ni, 2026).
-To cite it, see `CITATION.cff`.
+**"Position Matters More Than Channel: Talking a Language Model Out of a Correct Answer"** (Xinyi Ni, 2026),
+[arXiv:2610.34809](https://arxiv.org/abs/2610.34809). To cite it, see `CITATION.cff`.
 
 The subject model is Qwen3.5-27B on four-option MMLU-Pro items. Experiment 1 moves one advice paragraph between three
 positions in the prompt (end of the system message, top of the user message, after the options) and varies who signs
